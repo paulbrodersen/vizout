@@ -1,6 +1,8 @@
 # vizout
 Python module that provides a graphical interface to select outliers
-in high dimensional data sets interactively. Built on seaborn.
+in high dimensional data sets interactively.
+
+Built on seaborn.
 
 
 ## Example:
@@ -32,7 +34,8 @@ reduced_points = vizout.reduce_dimensionality(data_points, ndim=3, method='pca',
 # plot the data points along the first 3 principal components;
 selected_indices = vizout.main(reduced_points)
 
-# now select outliers by clicking on them
+# now select outliers by clicking on them;
+# the numbers that appear correspond to the index of the data point;
 ```
 
 ![alt tag](./figure_1.png)
